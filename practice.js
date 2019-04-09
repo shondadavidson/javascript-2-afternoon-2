@@ -18,7 +18,7 @@ var arr = [10,20,30];
 */
 
 //Code Here
-
+var first = function(arr){return arr[0]};
 
 
 ////////// PROBLEM 2 //////////
@@ -31,7 +31,7 @@ var arr = [40,50,60];
   Create a function named 'last' that is given 'arr' as an argument. 
   Return the last item in the given array.
 */
-
+var last = function(arr){return arr[(arr.length - 1)]}
 //Code Here
 
 
@@ -48,7 +48,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-
+var looper = function(family){
+  for(var i=0;i<family.length;i++){
+    alert(family[i])
+  }
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -63,7 +67,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+var reversedLooper = function(letters){
+  for(var i=letters.length-1;i>=0;i--){
+    alert(letters[i])
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -80,7 +88,14 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 //Code Here
 
 
-
+var evenFinder = function(num){
+  var newArr = []
+  for(var i = 0;i<num.length;i++){
+    if (num[i] % 2 === 0){
+      newArr.push(num[i])}
+  }
+  return newArr
+};
 
 
 
